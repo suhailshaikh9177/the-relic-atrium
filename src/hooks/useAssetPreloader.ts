@@ -8,10 +8,10 @@ export const useAssetPreloader = (): { progress: number; isLoaded: boolean } => 
     const [isLoaded, setIsLoaded] = useState(false);
 
     useEffect(() => {
-        // Collect all assets
+        // Collect all assets systematically
         const assetsToLoad: string[] = [];
 
-        // 1. Artifact Images
+        // 1. Artifact Images & Enrichment Portraits
         ARTIFACTS_DATA.forEach(a => {
             if (a.image) assetsToLoad.push(a.image);
             if (a.inventorPortrait) assetsToLoad.push(a.inventorPortrait);
@@ -25,21 +25,21 @@ export const useAssetPreloader = (): { progress: number; isLoaded: boolean } => 
         // 2. Wing Images & Videos
         WINGS.forEach(w => {
             if (w.image) assetsToLoad.push(w.image);
-            // Assuming video paths based on wing ID
+            // The video element paths
             assetsToLoad.push(`/videos/${w.id}.mp4`);
         });
 
-        // 3. Inventor Portraits (Hero Page)
+        // 3. Main Landing Page Portraits (Hero Page)
         INVENTORS.forEach(inv => {
             if (inv.image) assetsToLoad.push(inv.image);
         });
 
-        // Backgrounds & Globals
+        // 4. Backgrounds & Globals
         assetsToLoad.push('/images/bg-sunrise.webp');
         assetsToLoad.push('/images/dark-grid.png');
 
-        // Deduplicate
-        const uniqueAssets = Array.from(new Set(assetsToLoad));
+        // Deduplicate the list
+        const uniqueAssets = Array.from(new Set(assetsToLoad)).filter(Boolean);
         const totalAssets = uniqueAssets.length;
         let loadedCount = 0;
 
@@ -55,8 +55,8 @@ export const useAssetPreloader = (): { progress: number; isLoaded: boolean } => 
             setProgress(currentProgress);
 
             if (loadedCount === totalAssets) {
-                // Slight delay at 100% to ensure JS parses heavy assets
-                setTimeout(() => setIsLoaded(true), 300);
+                // Ensure the DOM has a moment to settle after 100% calculation
+                setTimeout(() => setIsLoaded(true), 500);
             }
         };
 
@@ -65,17 +65,29 @@ export const useAssetPreloader = (): { progress: number; isLoaded: boolean } => 
             handleLoad(); // still increment to not block the loader forever
         };
 
+        // Aggressive preloading strategy
         uniqueAssets.forEach(src => {
             if (src.endsWith('.mp4')) {
                 const video = document.createElement('video');
-                video.preload = 'auto';
+                video.preload = 'auto'; // Force download
                 video.oncanplaythrough = handleLoad;
                 video.onerror = () => handleError(src);
                 video.src = src;
-                video.load(); // Kick off network request
+                video.load();
             } else {
                 const img = new Image();
-                img.onload = handleLoad;
+                img.onload = () => {
+                    // Try to decode the image into memory before marking as loaded
+                    // This prevents the UI glitch where JS knows the image is there, 
+                    // but the GPU hasn't painted it yet.
+                    if ('decode' in img) {
+                        img.decode()
+                            .then(handleLoad)
+                            .catch(() => handleLoad()); // fallback
+                    } else {
+                        handleLoad();
+                    }
+                };
                 img.onerror = () => handleError(src);
                 img.src = src;
             }
