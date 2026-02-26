@@ -1,40 +1,23 @@
 import React, { useState, useEffect } from 'react';
 
 interface LoadingSplashProps {
+    progress: number; // Real percentage 0-100
+    isLoaded: boolean; // Flag to trigger fade out
     onComplete: () => void;
 }
 
-export const LoadingSplash: React.FC<LoadingSplashProps> = ({ onComplete }) => {
-    const [progress, setProgress] = useState(0);
+export const LoadingSplash: React.FC<LoadingSplashProps> = ({ progress, isLoaded, onComplete }) => {
     const [fadeOut, setFadeOut] = useState(false);
 
     useEffect(() => {
-        let frame: number;
-        let start: number | null = null;
-        const duration = 2200; // ~2.2 seconds total
-
-        const tick = (ts: number) => {
-            if (!start) start = ts;
-            const elapsed = ts - start;
-            // Ease-out curve: fast start, slow finish
-            const t = Math.min(elapsed / duration, 1);
-            const eased = 1 - Math.pow(1 - t, 3);
-            setProgress(Math.round(eased * 100));
-
-            if (t < 1) {
-                frame = requestAnimationFrame(tick);
-            } else {
-                // Hold at 100% briefly, then fade out
-                setTimeout(() => {
-                    setFadeOut(true);
-                    setTimeout(onComplete, 600);
-                }, 300);
-            }
-        };
-
-        frame = requestAnimationFrame(tick);
-        return () => cancelAnimationFrame(frame);
-    }, [onComplete]);
+        if (isLoaded) {
+            // Give UI a split second to render 100 before disappearing
+            setTimeout(() => {
+                setFadeOut(true);
+                setTimeout(onComplete, 600); // Wait for opacity transition
+            }, 300);
+        }
+    }, [isLoaded, onComplete]);
 
     return (
         <div style={{
@@ -59,7 +42,7 @@ export const LoadingSplash: React.FC<LoadingSplashProps> = ({ onComplete }) => {
                 textTransform: 'uppercase',
                 color: 'rgba(255,255,255,0.4)',
             }}>
-                Loading
+                Loading Assets
             </div>
 
             {/* Percentage */}
@@ -71,6 +54,8 @@ export const LoadingSplash: React.FC<LoadingSplashProps> = ({ onComplete }) => {
                 lineHeight: 1,
                 letterSpacing: '-0.02em',
                 fontVariantNumeric: 'tabular-nums',
+                width: '120px',
+                textAlign: 'center'
             }}>
                 {progress}
             </div>
@@ -89,9 +74,20 @@ export const LoadingSplash: React.FC<LoadingSplashProps> = ({ onComplete }) => {
                     left: 0,
                     height: '100%',
                     width: `${progress}%`,
-                    background: 'rgba(255,255,255,0.5)',
-                    transition: 'width 0.05s linear',
+                    background: 'rgba(255,255,255,0.8)',
+                    boxShadow: '0 0 10px rgba(255,255,255,0.5)',
+                    transition: 'width 0.2s cubic-bezier(0.4, 0, 0.2, 1)',
                 }} />
+            </div>
+
+            <div style={{
+                fontFamily: '"JetBrains Mono", monospace',
+                fontSize: '9px',
+                color: 'rgba(255,255,255,0.2)',
+                marginTop: '12px',
+                letterSpacing: '0.1em'
+            }}>
+                Fetching High-Resolution Media
             </div>
         </div>
     );

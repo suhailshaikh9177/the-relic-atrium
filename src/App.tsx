@@ -5,9 +5,10 @@ import { CursorTrail } from './components/CursorTrail';
 import { WingTimeline } from './scenes/WingTimeline';
 import { LoadingSplash } from './components/LoadingSplash';
 import { WINGS } from './data/wingsData';
+import { useAssetPreloader } from './hooks/useAssetPreloader';
 
 const App: React.FC = () => {
-  const [loading, setLoading] = useState(true);
+  const { progress, isLoaded } = useAssetPreloader();
   const [activeTimeline, setActiveTimeline] = useState<string | null>(null);
   const [activeSectionIndex, setActiveSectionIndex] = useState(0); // 0 is Hero, 1-6 are Wings
   const containerRef = useRef<HTMLDivElement>(null);
@@ -154,8 +155,13 @@ const App: React.FC = () => {
     };
   }, [activeTimeline]);
 
-  if (loading) {
-    return <LoadingSplash onComplete={() => setLoading(false)} />;
+  // We no longer manage our own "loading" state. We let the splash screen
+  // gracefully fade out using the isLoaded flag, and then unmount it completely
+  // once the onComplete callback fires.
+  const [splashVisible, setSplashVisible] = useState(true);
+
+  if (splashVisible) {
+    return <LoadingSplash progress={progress} isLoaded={isLoaded} onComplete={() => setSplashVisible(false)} />;
   }
 
   return (
