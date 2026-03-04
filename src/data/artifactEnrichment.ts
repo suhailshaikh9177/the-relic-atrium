@@ -29,49 +29,49 @@ export const ARTIFACT_ENRICHMENT: Record<string, EnrichmentEntry> = {
             { name: 'Vitruvius', dates: 'c. 80 BC – c. 15 BC', portrait: '/images/portraits/energy/vitruvius.jpg' },
         ],
         origin: 'Roman Empire (Barbegal, modern-day France)',
-        description: 'Engineered by Roman military forces using principles described by Vitruvius, the overshot water wheel was the first device to convert gravitational potential energy into sustained rotational work. Unlike earlier undershot designs which relied on the speed of the current, the overshot design captured the full weight of falling water in buckets, achieving far greater efficiency. This enabled industrial-scale grain milling and ore crushing operations across the empire, effectively creating the first factories.',
+        description: 'Instead of just letting a river casually push the bottom of a wheel, Roman engineers figured out how to pipe water so it fell directly onto the *top* of the wheel. This used gravity to do the heavy lifting, making the wheel spin with significantly more force and turning it into a highly efficient machine for grinding grain.',
     },
     'energy-02': {
         inventors: [
             { name: 'Thomas Newcomen', dates: '1664 – 1729', portrait: '/images/portraits/energy/Thomas Newcomen.jpg' },
         ],
         origin: 'United Kingdom',
-        description: 'Thomas Newcomen\'s atmospheric engine was the first practical device to harness steam for mechanical work. It operated by filling a cylinder with steam and then injecting cold water to create a vacuum; atmospheric pressure then pushed the piston down. Though inefficient by modern standards, it was the foundational proof-of-concept that thermal energy could pump water from coal mines, replacing muscle power in industrial applications.',
+        description: 'This was the world\'s first practical steam engine, mostly used to pump water out of flooded coal mines. It filled a large cylinder with steam, then sprayed cold water inside to quickly cool it. The steam shrank back into water, creating a vacuum that let the weight of the outside air pull a piston down. It was a massive fuel hog, but it got the job done.',
     },
     'energy-03': {
         inventors: [
             { name: 'James Watt', dates: '1736 – 1819', portrait: '/images/portraits/energy/James-Watt.webp' },
         ],
         origin: 'United Kingdom',
-        description: 'James Watt\'s rotative engine transformed reciprocating (up-and-down) motion into continuous rotation via the sun-and-planet gear system. His invention of the separate condenser dramatically improved thermal efficiency, while his centrifugal governor introduced one of the earliest feedback control systems. This engine directly powered the factories, mills, and locomotives that defined the Industrial Revolution.',
+        description: 'James Watt realized Newcomen\'s engine wasted a ton of fuel by constantly heating and cooling the same cylinder. He added a separate cooling chamber so the main cylinder could stay hot all the time. More importantly, he figured out how to turn the engine\'s up-and-down pumping motion into a smooth spinning motion, which meant steam power could finally be used to run factory machinery.',
     },
     'energy-04': {
         inventors: [
             { name: 'Zénobe Gramme', dates: '1826 – 1901', portrait: '/images/portraits/energy/Zénobe Gramme.jpg' },
         ],
         origin: 'France (Developed in Paris)',
-        description: 'Zénobe Gramme\'s ring dynamo was the first electric generator capable of producing smooth, continuous direct current suitable for commercial use. Its ring-wound armature design solved the problem of "pulsing" current, and the accidental discovery that it could also function as a motor in reverse marked the birth of practical electromechanical energy conversion.',
+        description: 'Before this, electricity was mostly just a parlor trick or trapped in weak batteries. The Gramme Dynamo was the first machine capable of generating smooth, continuous electricity on a scale large enough for industry. By spinning a tightly wound ring of copper wire inside a magnetic field, it proved that generating commercial power was actually possible.',
     },
     'energy-05': {
         inventors: [
             { name: 'Sir Charles Parsons', dates: '1854 – 1931', portrait: '/images/portraits/energy/Charles_Algernon_Parsons.jpg' },
         ],
         origin: 'United Kingdom',
-        description: 'Sir Charles Parsons invented the multi-stage reaction steam turbine, which replaced heavy reciprocating pistons with high-speed axial flow blades. This breakthrough enabled unprecedented power density in electricity generation. His design powered the revolutionary warship HMS Turbinia and became the standard architecture for almost all modern thermal and nuclear power plants worldwide.',
+        description: 'Instead of using steam to push a heavy, clunky piston back and forth, Parsons decided to blast high-pressure steam directly through a series of angled fan blades attached to a shaft. This made the shaft spin incredibly fast and with huge efficiency. We still use this exact fundamental concept today in power plants to generate the vast majority of our electricity.',
     },
     'energy-06': {
         inventors: [
             { name: 'William Stanley Jr.', dates: '1858 – 1916', portrait: '/images/portraits/energy/William Stanley Jr..jpg' },
         ],
         origin: 'United States',
-        description: 'Building on earlier European designs, William Stanley Jr. built the first practical, reliable alternating current transformer system for George Westinghouse. His induction coil design enabled voltage to be stepped up for efficient long-distance transmission and stepped down for safe local distribution. This solved the fundamental "distance problem" of electricity and enabled the creation of city-wide power grids.',
+        description: 'This is a brilliantly simple device that takes electricity and steps its voltage either up or down. Because of the transformer, power plants can crank the voltage way up to shoot electricity over miles of power lines without losing it all as heat, and then safely step it back down before it enters the wall outlets in your house.',
     },
     'energy-07': {
         inventors: [
             { name: 'Admiral Hyman G. Rickover', dates: '1900 – 1986', portrait: '/images/portraits/energy/Admiral Hyman G. Rickover.jpg' },
         ],
         origin: 'United States',
-        description: 'Driven by Admiral Hyman Rickover, the Pressurized Water Reactor was first adapted from naval propulsion to civilian use at Shippingport, Pennsylvania. This plant proved that controlled nuclear fission could generate electricity safely and commercially. The PWR design uses water under high pressure as both coolant and neutron moderator, becoming the dominant reactor architecture globally.',
+        description: 'This is the engine behind most modern nuclear submarines and power plants. It uses a controlled nuclear reaction to heat water to extreme temperatures. Because the water is kept under massive pressure, it is physically unable to boil. This superheated water is then pumped through a loop to safely boil a *second*, separate batch of water, creating the steam needed to spin a turbine.',
     },
     'energy-08': {
         inventors: [
@@ -80,28 +80,28 @@ export const ARTIFACT_ENRICHMENT: Record<string, EnrichmentEntry> = {
             { name: 'Calvin Fuller', dates: '1902 – 1994', portrait: '/images/portraits/energy/Calvin Fuller.jpeg' },
         ],
         origin: 'United States',
-        description: 'Developed at Bell Labs, the silicon solar cell was the first photovoltaic device efficient enough for practical power generation (approx. 6% efficiency at launch). By exploiting the quantum photoelectric effect in doped silicon, it bypassed the entire thermodynamic steam cycle to convert sunlight directly into electricity. This invention laid the foundation for the modern solar energy industry.',
+        description: 'This was the turning point that made solar power practical. Instead of relying on heat, it uses thin layers of silicon to literally catch incoming light particles (photons). When a photon hits the silicon, it violently knocks an electron loose, creating an immediate and direct electric current. It is the grandfather of every solar panel on roofs today.',
     },
     'energy-09': {
         inventors: [
             { name: 'GE Power Engineering', portrait: '/images/portraits/energy/GE Power Engineering.png', isCompany: true },
         ],
         origin: 'United States',
-        description: 'The combined cycle gas turbine pairs a Brayton-cycle gas turbine with a Rankine-cycle steam turbine. It captures the exhaust heat from the gas turbine—which would otherwise be wasted—and uses it to boil water for the steam turbine. This dual-cycle approach pushes thermal efficiency above 60%, approaching the theoretical thermodynamic ceiling for fossil fuel combustion.',
+        description: 'This is a massive efficiency hack for modern power plants. First, it burns natural gas to spin a turbine and generate electricity. But instead of letting the incredibly hot exhaust gas escape up a smokestack, it captures that waste heat to boil water and spin a *second* steam turbine. You essentially get two streams of electricity for the fuel price of one.',
     },
     'energy-10': {
         inventors: [
             { name: 'Siemens Gamesa', portrait: '/images/portraits/energy/Siemens Gamesa.png', isCompany: true },
         ],
         origin: 'International',
-        description: 'Modern offshore turbines, such as the Haliade-X, are among the world\'s most powerful machines, with single units generating over 12 to 15 megawatts. Standing taller than most skyscrapers, their blades use active pitch control and advanced aerospace composites to harvest kinetic energy from oceanic wind streams at an unprecedented scale.',
+        description: 'These are absolute monsters of modern engineering, with some standing taller than skyscrapers. By anchoring them far out in the ocean, they catch much stronger and more consistent winds than turbines on land. They turn massive blades to generate immense amounts of clean power—sometimes enough to power a small town with just a single turbine.',
     },
     'energy-11': {
         inventors: [
             { name: 'ITER Consortium', portrait: '/images/portraits/energy/International Thermonuclear Experimental Reactor Consortium.png', isCompany: true },
         ],
         origin: 'International (Concept originally Soviet)',
-        description: 'The Tokamak is a magnetic confinement device designed to produce controlled thermonuclear fusion power. The ITER project aims to demonstrate net energy gain by using superconducting magnets to confine plasma at temperatures exceeding 150 million degrees. It represents humanity\'s attempt to replicate the energy source of stars for virtually limitless, carbon-free power.',
+        description: 'Still in the experimental phase, this machine is essentially an attempt to build a star inside a bottle. It uses incredibly powerful electromagnets to trap a cloud of superheated gas (plasma) in the shape of a donut. It squeezes the atoms together so tightly that they fuse, with the goal of releasing practically limitless, entirely clean energy.',
     },
 
     // ========================
@@ -112,63 +112,63 @@ export const ARTIFACT_ENRICHMENT: Record<string, EnrichmentEntry> = {
             { name: 'Ancient Egyptian Craftsmen', portrait: '/images/portraits/transportation/Ancient Egyptian Craftsmen.webp', isCompany: true },
         ],
         origin: 'Ancient Egypt',
-        description: 'The Egyptian light chariot featured the revolutionary spoked wheel, a precision-engineered component that dramatically reduced rotational mass compared to solid wooden disks. This innovation in materials and geometry enabled high-speed battlefield maneuverability, and the chariot became the dominant military platform across the ancient Near East for centuries.',
+        description: 'Ancient Egyptians didn\'t invent the wheel, but they perfected it for warfare. By making the wheels spoked instead of solid wood, and moving the axle to the very back, they created a super lightweight, incredibly fast, and highly maneuverable mobile firing platform.',
     },
     'transportation-02': {
         inventors: [
             { name: 'Prince Henry the Navigator', dates: '1394 – 1460', portrait: '/images/portraits/transportation/Prince Henry the Navigator.jpg' },
         ],
         origin: 'Portugal',
-        description: 'The caravel was a small, highly maneuverable sailing vessel. Its key innovation was lateen (triangular) rigging, which allowed it to sail much closer to the wind ("tack") than contemporary square-rigged ships. This capability enabled Portuguese explorers to navigate the difficult winds of the open Atlantic and map the coastlines of Africa, Asia, and the Americas.',
+        description: 'Before this, ships mostly sailed wherever the wind happened to push them. The Caravel used special triangular sails that allowed sailors to actually catch the wind at an angle and zig-zag *against* it. This simple change is what made the great global ages of exploration possible.',
     },
     'transportation-03': {
         inventors: [
             { name: 'Robert Stephenson', dates: '1803 – 1859', portrait: '/images/portraits/transportation/Robert Stephenson.jpg' },
         ],
         origin: 'United Kingdom',
-        description: 'Stephenson\'s Rocket won the Rainhill Trials of 1829, proving that steam locomotives were viable for passenger and freight railways. Its multi-tube boiler and blast-pipe exhaust system established the core engineering principles used in all subsequent steam locomotives, effectively launching the railway age that transformed global commerce.',
+        description: 'This wasn\'t the very first train, but it was the one that figured out the winning formula. By running a bunch of hot exhaust pipes through the boiler water instead of just one, it created steam much faster, proving trains could be fast and reliable enough to connect cities.',
     },
     'transportation-04': {
         inventors: [
             { name: 'Elisha Otis', dates: '1811 – 1861', portrait: '/images/portraits/transportation/Elisha Otis.jpg' },
         ],
         origin: 'United States',
-        description: 'Elisha Otis invented the safety elevator by designing an automatic braking mechanism that locked the platform in place if the hoisting cable failed. His dramatic public demonstration at the 1853 Crystal Palace Exhibition proved the concept. This invention made tall buildings practical and directly enabled the construction of the modern skyscraper.',
+        description: 'Elevators existed before this, but people were terrified the rope would snap. Elisha Otis invented a simple spring-loaded catch system. If the cable broke, metal teeth would instantly bite into the guide rails and stop the cart from falling. This single invention is the reason skyscrapers exist today.',
     },
     'transportation-05': {
         inventors: [
             { name: 'John Kemp Starley', dates: '1854 – 1901', portrait: '/images/portraits/transportation/John Kemp Starley.jpeg' },
         ],
         origin: 'United Kingdom',
-        description: 'John Kemp Starley\'s Rover Safety Bicycle replaced the dangerous penny-farthing with a "diamond-frame" design using equal-sized wheels, a rear-wheel roller chain drive, and pneumatic tires. Its ergonomic practicality made cycling accessible to the masses, and its component technologies (chain drive, tires, spoked tension wheels) directly influenced early automobile engineering.',
+        description: 'Early bikes had massive front wheels that were incredibly dangerous and hard to ride. The "Rover" changed everything by using two wheels of the same size and a metal chain to drive the back wheel. It’s the exact same basic design as almost every bicycle you see today.',
     },
     'transportation-06': {
         inventors: [
             { name: 'Karl Benz', dates: '1844 – 1929', portrait: '/images/portraits/transportation/Karl Benz.avif' },
         ],
         origin: 'Germany',
-        description: 'Karl Benz\'s Patent-Motorwagen was the first automobile designed as an integrated system—purpose-built around an internal combustion engine rather than adapted from a horse carriage. Its single-cylinder four-stroke engine, electric ignition, and differential gear established the foundational architecture that all subsequent motor vehicles would follow.',
+        description: 'This is widely considered the first true automobile. Karl Benz didn\'t just strap an engine to a horse carriage; he custom-built a three-wheeled steel frame specifically around a small gas engine. It was the first time a vehicle was designed from scratch to be driven by internal combustion.',
     },
     'transportation-07': {
         inventors: [
             { name: 'Orville & Wilbur Wright', dates: '1871–1948 / 1867–1912', portrait: '/images/portraits/transportation/Orville and Wilbur Wright.avif' },
         ],
         origin: 'United States',
-        description: 'The Wright Flyer achieved the first sustained, controlled, heavier-than-air powered flight at Kitty Hawk on December 17, 1903. The Wright brothers\' key innovation was three-axis control—wing warping (roll), a movable rudder (yaw), and an elevator (pitch)—giving the pilot the ability to steer in all dimensions.',
+        description: 'The Wright brothers solved the hardest part of flying: steering. Instead of just trying to power a glider into the air, they invented a way to slightly twist the wings to control the plane\'s roll, giving the pilot actual balance in the air. This made powered, controlled flight a reality.',
     },
     'transportation-08': {
         inventors: [
             { name: 'Burmeister & Wain', portrait: '/images/portraits/transportation/Burmeister & Wain.jpeg', isCompany: true },
         ],
         origin: 'Denmark',
-        description: 'The MS Selandia was the world\'s first ocean-going motor vessel powered by diesel engines. Built by Burmeister & Wain in Copenhagen, it demonstrated that diesel propulsion was more efficient, reliable, and cleaner than coal-fired steam for maritime operations. Its success catalyzed the global transition of commercial shipping to diesel power.',
+        description: 'Before the Selandia, large ships relied on men shoveling mountains of coal into massive steam boilers. This was the first ocean-going ship powered by diesel engines. It proved that ships could be cleaner, require way fewer crew members, and travel much further without needing to refuel.',
     },
     'transportation-09': {
         inventors: [
             { name: 'Ronald Bishop', dates: '1903 – 1989', portrait: '/images/portraits/transportation/Ronald Bishop.jpg' },
         ],
         origin: 'United Kingdom',
-        description: 'The de Havilland Comet was the world\'s first commercial jet airliner. Its turbojet engines allowed cruising at speeds and altitudes impossible for propeller aircraft, halving transatlantic travel times. Though early models suffered catastrophic structural failures due to metal fatigue, the lessons learned shaped all subsequent jet airliner safety and design standards.',
+        description: 'This was the world’s first commercial jet airliner. It completely revolutionized travel by flying higher, faster, and smoother than propeller planes. While it tragically suffered from engineering issues early on, it laid the direct groundwork for the modern jet travel we use today.',
     },
     'transportation-10': {
         inventors: [
@@ -176,7 +176,7 @@ export const ARTIFACT_ENRICHMENT: Record<string, EnrichmentEntry> = {
             { name: 'NASA', portrait: '/images/portraits/transportation/nasa.avif', isCompany: true },
         ],
         origin: 'United States',
-        description: 'The Apollo Command Module was the crew compartment that carried three astronauts to lunar orbit and safely returned them to Earth through atmospheric reentry at 25,000 mph. Its heat shield, life support, and guidance systems represented the most complex integrated engineering feat in human history up to that point.',
+        description: 'This was the ultimate survival capsule. It was designed to keep three astronauts alive on a trip to the moon and back, packing life support, navigation, and thrusters into a tiny cone. Most importantly, it had a heavy-duty heat shield that kept them from burning up when slamming back into Earth\'s atmosphere.',
     },
     'transportation-11': {
         inventors: [
@@ -184,7 +184,7 @@ export const ARTIFACT_ENRICHMENT: Record<string, EnrichmentEntry> = {
             { name: 'SpaceX', portrait: '/images/portraits/transportation/SpaceX.jpg', isCompany: true },
         ],
         origin: 'United States',
-        description: 'SpaceX\'s Starship is designed to be the first fully reusable super heavy-lift launch vehicle, capable of carrying over 100 tons to orbit. Its stainless steel construction and Raptor methane engines represent a paradigm shift from expendable rocketry toward airline-style operations, with the ultimate goal of enabling human settlement on Mars.',
+        description: 'For decades, rockets were basically single-use, multi-million-dollar trash. This system is designed to be fully and rapidly reusable, just like an airplane. It\'s the biggest, most powerful flying object ever built, with the ultimate goal of making it cheap enough to actually colonize other planets.',
     },
 
     // ========================
@@ -195,21 +195,21 @@ export const ARTIFACT_ENRICHMENT: Record<string, EnrichmentEntry> = {
             { name: 'Hellenistic Greek Scientists', portrait: '/images/portraits/computation/Hellenistic Greek.jpg', isCompany: true },
         ],
         origin: 'Ancient Greece',
-        description: 'The Antikythera Mechanism is a bronze analog computer dating to approximately 150 BC. Its intricate system of over 30 meshing gears could predict eclipses, track lunar phases, and model planetary motions. It represents the earliest known use of differential gearing and remains one of archaeology\'s most astonishing discoveries.',
+        description: 'An ancient Greek hand-powered mechanical computer. They used an incredibly complex system of bronze gears to predict eclipses and track the planets decades in advance. It was basically a clockwork solar system that proved ancient people were doing advanced math with metal long before we realized.',
     },
     'computation-02': {
         inventors: [
             { name: 'Joseph Marie Jacquard', dates: '1752 – 1834', portrait: '/images/portraits/computation/Joseph Marie Jacquard.jpg' },
         ],
         origin: 'France',
-        description: 'Joseph Marie Jacquard\'s programmable loom used interchangeable punch cards to control the weaving of complex textile patterns automatically. Each card encoded a row of the design in binary form—hole or no hole—establishing the fundamental concept of stored programs. This mechanism explicitly inspired Charles Babbage and the concept of computer programming.',
+        description: 'This wasn\'t a traditional computer, but it used stiff pasteboard cards with holes punched in them to dictate how a mechanical loom weaved patterns into fabric. This was the very first time someone successfully "programmed" a machine using punch cards, a concept that early computers would rely on for the next 150 years.',
     },
     'computation-03': {
         inventors: [
             { name: 'Charles Babbage', dates: '1791 – 1871', portrait: '/images/portraits/computation/Charles Babbage.jpg' },
         ],
         origin: 'United Kingdom',
-        description: 'Charles Babbage\'s Analytical Engine was the first design for a general-purpose computing machine. It featured a "Mill" (processor), "Store" (memory), input via punch cards, and a printer output—anticipating the modern von Neumann architecture by over a century. Ada Lovelace\'s notes on the engine contain what is recognized as the first algorithm intended for a machine.',
+        description: 'Charles Babbage designed this massive, steam-powered mechanical calculator in the 1800s. It had a "mill" to do the math and a "store" to hold the numbers, and it could theoretically run loops and conditional logic. While it was never fully built in his lifetime, it was the true conceptual blueprint for the modern computer.',
     },
     'computation-04': {
         inventors: [
@@ -217,7 +217,7 @@ export const ARTIFACT_ENRICHMENT: Record<string, EnrichmentEntry> = {
             { name: 'John Mauchly', dates: '1907 – 1980', portrait: '/images/portraits/computation/John Mauchly.jpg' },
         ],
         origin: 'United States',
-        description: 'ENIAC was the first electronic general-purpose digital computer, built at the University of Pennsylvania. Using 17,468 vacuum tubes, it could perform 5,000 additions per second—a thousandfold improvement over electromechanical calculators. It proved that electronic switching was the native medium for high-speed computation.',
+        description: 'This was the first programmable, electronic, general-purpose digital computer. It was the size of a large room, weighed 30 tons, and used thousands of glowing, hot vacuum tubes instead of mechanical gears to do math at lightning speed. It was originally built to calculate artillery firing tables for the military.',
     },
     'computation-05': {
         inventors: [
@@ -225,35 +225,35 @@ export const ARTIFACT_ENRICHMENT: Record<string, EnrichmentEntry> = {
             { name: 'Raytheon', portrait: '/images/portraits/computation/Raytheon.png', isCompany: true },
         ],
         origin: 'United States',
-        description: 'The Apollo Guidance Computer was the first computer to essentially rely on integrated circuits, compressing room-sized computational power into a 70-pound flight unit. Its real-time operating system and magnetic core rope memory guided Apollo missions to the Moon with just 74 kilobytes of ROM—a triumph of software engineering under extreme hardware constraints.',
+        description: 'The computer that flew astronauts to the moon. Instead of filling a room, it was shrunk down to the size of a briefcase using newly invented microchips. It was incredibly reliable and totally revolutionary because it was one of the first computers forced to process data and make decisions in real-time while flying a spacecraft.',
     },
     'computation-06': {
         inventors: [
             { name: 'Adam Osborne', dates: '1939 – 2003', portrait: '/images/portraits/computation/Adam Osborne.jpg' },
         ],
         origin: 'United States',
-        description: 'The Osborne 1 was the first commercially successful portable microcomputer, weighing 24 pounds and featuring a 5-inch CRT display. Bundled with valuable software, it demonstrated enormous market demand for mobile computing. Its success and subsequent collapse became a cautionary tale, but it paved the way for the laptop.',
+        description: 'Consider this the granddaddy of laptops. It weighed 24 pounds, had a tiny 5-inch screen, and looked like a piece of heavy-duty testing equipment you lugged around by a handle. But it was the first time you could actually pack up a full, working computer, shove it under an airplane seat, and take it with you.',
     },
     'computation-07': {
         inventors: [
             { name: 'Don Estridge', dates: '1937 – 1985', portrait: '/images/portraits/computation/Don Estridge.jpg' },
         ],
         origin: 'United States',
-        description: 'The IBM PC Model 5150 standardized personal computing through its open architecture. By publishing its technical specifications and using off-the-shelf components, IBM inadvertently created a platform that any manufacturer could clone. This decision spawned the "IBM-compatible" ecosystem that still dominates desktop computing today.',
+        description: 'Before this, personal computers were a chaotic mess of different brands that didn\'t play nice together. IBM stepped in and created a standardized machine using off-the-shelf parts and Microsoft\'s operating system. It set the basic hardware standard that almost all modern Windows PCs still follow today.',
     },
     'computation-08': {
         inventors: [
             { name: 'NVIDIA', portrait: '/images/portraits/computation/NVIDIA.png', isCompany: true },
         ],
         origin: 'United States',
-        description: 'The GeForce 256 was marketed as the world\'s first GPU (Graphics Processing Unit). Its hardware "transform-and-lighting" engine offloaded intensive geometric calculations from the CPU. Its true legacy lies in its massively parallel architecture—thousands of simple cores working simultaneously—which later proved ideal for machine learning and launched the modern AI revolution.',
+        description: 'Billed as the world\'s first GPU (Graphics Processing Unit). Instead of forcing the computer\'s main brain to slowly draw 3D graphics on the screen, this dedicated chip took over all the complex lighting and geometry math. It completely revolutionized video games and accidentally laid the hardware groundwork for modern AI.',
     },
     'computation-09': {
         inventors: [
             { name: 'Amazon Web Services', portrait: '/images/portraits/computation/Amazon Web Services.png', isCompany: true },
         ],
         origin: 'United States',
-        description: 'Amazon Web Services launched Elastic Compute Cloud (EC2) in 2006, offering on-demand virtual server instances backed by commodity blade hardware. This shifted computing from a capital expenditure (buying servers) to an operational one (renting capacity). AWS effectively industrialized computing infrastructure, creating "The Cloud" as a global utility.',
+        description: 'Instead of buying giant, incredibly expensive supercomputers, tech companies figured out how to slide hundreds of cheap, standardized, ultra-thin computers (called blades) into massive racks. By networking thousands of them together in giant warehouses, they created the physical backbone of what we now call the "Cloud."',
     },
     'computation-10': {
         inventors: [
@@ -261,14 +261,14 @@ export const ARTIFACT_ENRICHMENT: Record<string, EnrichmentEntry> = {
             { name: 'Apple', portrait: '/images/portraits/computation/apple.jpg', isCompany: true },
         ],
         origin: 'United States',
-        description: 'The original iPhone dissolved the boundaries between phone, computer, and internet device into a single multi-touch glass slab. Apple\'s insistence on a capacitive touchscreen and the elimination of physical keyboards created a new paradigm of direct manipulation computing. It transformed the smartphone from a business tool into a universal human interface.',
+        description: 'It wasn\'t the very first smartphone, but it ditched the standard plastic keyboard for a giant piece of glass that you touched with your fingers. By packing a highly capable computer, a real web browser, and an iPod into a pocket-sized shell, it completely changed how humans interact with the internet.',
     },
     'computation-11': {
         inventors: [
             { name: 'IBM Research', portrait: '/images/portraits/computation/IBM Research.webp', isCompany: true },
         ],
         origin: 'United States',
-        description: 'IBM\'s Quantum System Two is a modular quantum computing platform using superconducting transmon qubits. By exploiting quantum superposition and entanglement, it can explore computational spaces exponentially larger than classical machines. It represents the frontier of computation, with potential applications in cryptography, drug discovery, and materials science.',
+        description: 'Regular computers think in strict 1s and 0s. This machine uses extremely weird quantum physics to let its basic processing units (qubits) be a 1, a 0, or a mix of both at the exact same time. It has to be kept colder than deep space to work, and it\'s being built to solve hyper-complex problems—like inventing new materials—that would take a normal computer thousands of years to crack.',
     },
 
     // ========================
@@ -279,7 +279,7 @@ export const ARTIFACT_ENRICHMENT: Record<string, EnrichmentEntry> = {
             { name: 'Johannes Gutenberg', dates: 'c. 1400 – 1468', portrait: '/images/portraits/communication/Johannes Gutenberg.avif' },
         ],
         origin: 'Germany',
-        description: 'Johannes Gutenberg\'s movable type printing press mechanized the reproduction of text using individually cast metal letters that could be rearranged and reused. This innovation reduced the cost of books by over 80% within decades, enabling mass literacy, the Protestant Reformation, the Scientific Revolution, and the emergence of public opinion as a political force.',
+        description: 'Before Gutenberg, books were copied by hand, making them super expensive and rare. He figured out how to cast individual metal letters, arrange them into pages, ink them, and stamp them onto paper. It suddenly made mass-producing information incredibly cheap and sparked a massive explosion in global literacy.',
     },
     'communication-02': {
         inventors: [
@@ -287,28 +287,28 @@ export const ARTIFACT_ENRICHMENT: Record<string, EnrichmentEntry> = {
             { name: 'Alfred Vail', dates: '1807 – 1859', portrait: '/images/portraits/communication/Alfred Vail.jpg' },
         ],
         origin: 'United States',
-        description: 'Samuel Morse\'s electric telegraph and its associated code system detached information from physical transport for the first time in history. The message "What hath God wrought" sent from Washington to Baltimore in 1844 demonstrated that electrical pulses through copper wire could transmit human thought at the speed of light across continental distances.',
+        description: 'For most of human history, a message could only travel as fast as a horse or a ship. The telegraph changed the game by sending short and long bursts of electricity (Morse code) over a wire. Almost overnight, it shrank the world, allowing people to instantly communicate across continents for the very first time.',
     },
     'communication-03': {
         inventors: [
             { name: 'Alexander Graham Bell', dates: '1847 – 1922', portrait: '/images/portraits/communication/Alexander_Graham_Bell_.jpg' },
         ],
         origin: 'United States',
-        description: 'Alexander Graham Bell\'s invention converted the mechanical vibrations of the human voice into proportional electrical current, enabling real-time vocal communication over wire. Demonstrated at the 1876 Centennial Exhibition, this device proved that analog waveforms could faithfully reproduce the nuances of human speech across vast distances.',
+        description: 'This was the very first functional telephone. Instead of just sending clicks and beeps over a wire, Bell used a needle vibrating in a small cup of acidic water to translate the actual sound waves of a human voice into a fluctuating electrical current. It proved that real-time voice conversations across distances were actually possible.',
     },
     'communication-04': {
         inventors: [
             { name: 'Guglielmo Marconi', dates: '1874 – 1937', portrait: '/images/portraits/communication/Guglielmo Marconi.jpg' },
         ],
         origin: 'Italy',
-        description: 'Guglielmo Marconi proved that electromagnetic waves could carry information through the atmosphere without physical wires. His spark-gap transmitter sent the first transatlantic wireless signal in 1901, demonstrating that radio waves followed the curvature of the Earth. This breakthrough freed communication from the constraint of laid cable infrastructure.',
+        description: 'Wires were great, but they couldn\'t reach ships at sea or cross rough terrain easily. Marconi figured out how to blast invisible electromagnetic waves through the air to carry Morse code over huge distances. It was the birth of wireless communication, eventually evolving into the radio and Wi-Fi we use today.',
     },
     'communication-05': {
         inventors: [
             { name: 'Philo Farnsworth', dates: '1906 – 1971', portrait: '/images/portraits/communication/Philo Farnsworth.webp' },
         ],
         origin: 'United States',
-        description: 'At age 21, Philo Farnsworth demonstrated the first fully electronic television system using his Image Dissector camera tube. Unlike conflicting mechanical scanning systems, his approach used electron beams to dissect images line by line, proving that live visual information could be captured, transmitted, and reconstructed electronically in real time.',
+        description: 'Early attempts at TV relied on clunky, spinning mechanical disks to scan images. Farnsworth, while still a teenager, had the genius idea to do it completely electronically. He used magnets to scan a beam of electrons back and forth incredibly fast, painting a moving picture onto a screen. It laid the foundation for every modern television.',
     },
     'communication-06': {
         inventors: [
@@ -316,14 +316,14 @@ export const ARTIFACT_ENRICHMENT: Record<string, EnrichmentEntry> = {
             { name: 'Bell Labs', portrait: '/images/portraits/communication/Bell Labs.png', isCompany: true },
         ],
         origin: 'United States',
-        description: 'Telstar 1 was the first active communications satellite. It relayed the first live transatlantic television signal, telephone calls, and data transmissions by receiving microwave signals from ground stations, amplifying them, and retransmitting them back to Earth. It demonstrated that orbital infrastructure could bypass the planet\'s curvature to link continents.',
+        description: 'This was the first active communications satellite. It basically acted like a giant relay station in the sky, catching signals from one side of the world, amplifying them, and shooting them back down. For the first time ever, live television broadcasts and phone calls could be beamed instantly across the Atlantic Ocean.',
     },
     'communication-07': {
         inventors: [
             { name: 'BBN Technologies', portrait: '/images/portraits/communication/BBN Technologies.avif', isCompany: true },
         ],
         origin: 'United States',
-        description: 'The Interface Message Processor was a ruggedized minicomputer that served as the first ARPANET node. It introduced packet switching—breaking data into discrete packets routed independently across the network—which proved far more resilient and efficient than circuit switching. This architecture became the foundation of the modern internet.',
+        description: 'This was essentially the world\'s very first network router. Built for researchers and the military, it took large chunks of computer data, chopped them up into tiny packets, sent them over phone lines, and reassembled them at the destination. It was the crucial piece of hardware that made the early internet actually work.',
     },
     'communication-08': {
         inventors: [
@@ -331,7 +331,7 @@ export const ARTIFACT_ENRICHMENT: Record<string, EnrichmentEntry> = {
             { name: 'Motorola', portrait: '/images/portraits/communication/Motorola.jpg', isCompany: true },
         ],
         origin: 'United States',
-        description: 'Martin Cooper made the first handheld cellular phone call on April 3, 1973, from a Manhattan sidewalk using the Motorola DynaTAC prototype. This device assigned a network identity to a person rather than a physical location, fundamentally changing the relationship between humans and telecommunications.',
+        description: 'Nicknamed "the brick," this was the first truly portable, hand-held mobile phone. It weighed two pounds, cost a fortune, and the battery only lasted about 30 minutes. But it completely broke the cord, proving that you could call a specific person no matter where they were, rather than just calling a physical building.',
     },
     'communication-09': {
         inventors: [
@@ -340,14 +340,14 @@ export const ARTIFACT_ENRICHMENT: Record<string, EnrichmentEntry> = {
             { name: 'France Télécom', portrait: '/images/portraits/communication/France Télécom.png', isCompany: true },
         ],
         origin: 'International',
-        description: 'TAT-8 was the first transatlantic fiber optic cable, using laser-pulsed light through glass fibers to carry 40,000 simultaneous telephone circuits. Its undersea optical repeaters amplified photon signals across 3,600 miles of ocean floor. This cable proved that fiber optics could replace copper for intercontinental communications.',
+        description: 'Running a massive fiber-optic cable across the bottom of the ocean is useless if the light signal fades out halfway across. This device was spliced into the cable every few dozen miles to catch the fading laser light, boost it, and fire it back down the line. It\'s the unsung hero that physically makes the modern global internet possible.',
     },
     'communication-10': {
         inventors: [
             { name: 'Neuralink', portrait: '/images/portraits/communication/Neuralink.svg', isCompany: true },
         ],
         origin: 'United States',
-        description: 'The Neuralink N1 implant is a brain-computer interface that uses an array of ultra-thin electrode threads to read and stimulate neural activity. Implanted by a precision surgical robot, it aims to bypass all physical input and output to connect the human brain directly to digital systems—potentially restoring motor function and ultimately enabling direct thought-to-machine communication.',
+        description: 'Still in its early stages, this tiny chip is designed to be surgically embedded directly into the human brain. By reading the electrical spikes of individual neurons, it translates human thoughts straight into computer commands. The ultimate goal is to let people control computers, phones, or even robotic limbs using nothing but their minds.',
     },
 
     // ========================
@@ -359,28 +359,28 @@ export const ARTIFACT_ENRICHMENT: Record<string, EnrichmentEntry> = {
             { name: 'King Edward I', portrait: '/images/portraits/warfare/King Edward I.jpg' },
         ],
         origin: 'England',
-        description: 'The Warwolf was the largest trebuchet ever constructed, built for King Edward I during the Siege of Stirling Castle. Using a massive counterweight, it could hurl 300-pound stones over 200 yards with devastating accuracy. Its psychological impact was so great that the Scottish garrison attempted to surrender before it was even operational.',
+        description: 'Instead of relying on twisted ropes or human muscle to fling projectiles, this giant siege engine used simple gravity. By dropping a massive wooden box filled with rocks or dirt on one end of a pivot, it whipped the longer end around to smash castle walls with heavy boulders from a safe distance.',
     },
     'warfare-02': {
         inventors: [
             { name: 'Munir Ali', dates: 'Active c. 1464', portrait: '/images/portraits/warfare/Munir Ali.jpg' },
         ],
         origin: 'Ottoman Empire',
-        description: 'The Dardanelles Gun was a massive bronze bombard cast by the Ottoman engineer Munir Ali. Modeled on weapons used during the Siege of Constantinople in 1453, these super-guns demonstrated that no stone fortification could withstand concentrated gunpowder artillery, ending the military relevance of the medieval castle.',
+        description: 'This was a monstrous, 16-ton bronze cannon cast in the 1400s. It was so impossibly huge that it had to be screwed together from two separate pieces just to move it. It fired giant marble balls the size of a person and was basically designed to shatter the thickest stone fortifications on earth.',
     },
     'warfare-03': {
         inventors: [
             { name: 'John Ericsson', dates: '1803 – 1889', portrait: '/images/portraits/warfare/John Ericsson.jpg' },
         ],
         origin: 'United States',
-        description: 'Designed by John Ericsson, the USS Monitor introduced the revolving armored turret to naval warfare. Its engagement with the CSS Virginia in 1862 marked the first battle between ironclad warships, rendering all wooden navies obsolete and establishing the architectural template for every subsequent battleship.',
+        description: 'Before this, warships were tall wooden targets filled with sails. The Monitor sat incredibly low in the water, wrapped completely in thick iron armor, and featured a single, rotating gun turret on top. Enemy cannonballs practically bounced right off it, instantly changing naval warfare forever.',
     },
     'warfare-04': {
         inventors: [
             { name: 'Hiram Maxim', dates: '1840 – 1916', portrait: '/images/portraits/warfare/Hiram Maxim.jpg' },
         ],
         origin: 'United Kingdom',
-        description: 'Hiram Maxim\'s invention was the first fully automatic machine gun, using the recoil energy of each fired cartridge to eject, reload, and fire the next. A single operator could sustain 600 rounds per minute, creating an impassable "zone of denial." Its use in colonial wars and WWI fundamentally transformed infantry warfare.',
+        description: 'This was the first true, fully automatic machine gun. Instead of needing a soldier to manually crank a handle to fire, it ingeniously used the kickback energy from each fired bullet to eject the empty shell and load the next one. As long as you held the trigger and fed it ammo, it kept firing.',
     },
     'warfare-05': {
         inventors: [
@@ -388,7 +388,7 @@ export const ARTIFACT_ENRICHMENT: Record<string, EnrichmentEntry> = {
             { name: 'Royal Navy', portrait: '/images/portraits/warfare/Royal Navy.png', isCompany: true },
         ],
         origin: 'United Kingdom',
-        description: 'HMS Dreadnought was a revolutionary battleship that rendered all previous capital ships obsolete. Her uniform battery of ten 12-inch guns, steam turbine propulsion, and centralized fire control created such a massive leap in capability that all subsequent battleships were classified as either "dreadnoughts" or "pre-dreadnoughts."',
+        description: 'This British battleship was so advanced that it instantly made every other navy on earth obsolete the day it launched. It was faster because it used new steam turbines, and instead of carrying a messy mix of different-sized cannons, it was packed exclusively with massive, long-range heavy guns.',
     },
     'warfare-06': {
         inventors: [
@@ -396,28 +396,28 @@ export const ARTIFACT_ENRICHMENT: Record<string, EnrichmentEntry> = {
             { name: 'Walter Wilson', dates: '1874 – 1957', portrait: '/images/portraits/warfare/Walter Wilson.jpg' },
         ],
         origin: 'United Kingdom',
-        description: 'The Mark IV was the first tank deployed in significant numbers during World War I. Designed by Tritton and Wilson, it solved the fundamental problem of trench warfare by encasing a crew in a mobile armored box capable of crossing trenches, crushing barbed wire, and providing direct fire support to advancing infantry.',
+        description: 'During World War I, soldiers were stuck in muddy, deadly trenches. This was essentially a massive, armor-plated metal box wrapped in caterpillar tracks. It was built specifically to crawl right over deep craters, crush barbed wire fences, and shield infantry as they slowly walked across the battlefield.',
     },
     'warfare-07': {
         inventors: [
             { name: 'R.J. Mitchell', dates: '1895 – 1937', portrait: '/images/portraits/warfare/R.J. Mitchell.jpg' },
         ],
         origin: 'United Kingdom',
-        description: 'R.J. Mitchell\'s Supermarine Spitfire was a masterpiece of aerodynamic engineering whose elliptical wing provided exceptional maneuverability at high speeds. During the Battle of Britain, Spitfires proved that a nation could be defended through the technological superiority of its air interceptors alone, changing the strategic calculus of warfare.',
+        description: 'A legendary British fighter plane that was crucial in winning the Battle of Britain. It was designed with extremely thin, highly aerodynamic elliptical wings that made it incredibly fast and maneuverable. It could out-turn and out-fly the clunkier enemy bombers and fighters it was sent up against.',
     },
     'warfare-08': {
         inventors: [
             { name: 'Boeing', portrait: '/images/portraits/warfare/Boeing Engineering Team.png', isCompany: true },
         ],
         origin: 'United States',
-        description: 'The B-29 Superfortress was the most technologically advanced bomber of World War II, featuring pressurized crew cabins, remote-controlled gun turrets, and an analog fire-control computer. It was the aircraft that delivered both atomic bombs over Japan, and its development cost exceeded that of the Manhattan Project itself.',
+        description: 'This was a giant, long-range WWII bomber built to fly higher and further than anything else. Most importantly, it featured a fully pressurized cabin. This meant the crew didn\'t have to freeze or wear bulky oxygen masks at high altitudes, keeping them safely above the reach of most enemy anti-aircraft guns.',
     },
     'warfare-09': {
         inventors: [
             { name: 'Manhattan Project', portrait: '/images/portraits/warfare/Manhattan Project Scientists.png', isCompany: true },
         ],
         origin: 'United States',
-        description: 'The Fat Man implosion bomb used precisely shaped high-explosive lenses to symmetrically compress a plutonium core to supercriticality. Detonated over Nagasaki on August 9, 1945, it released the energy equivalent of 21,000 tons of TNT from a core weighing just 6.2 kilograms, ushering in the age of nuclear deterrence.',
+        description: 'This atomic weapon was completely different from a regular explosive. It used a sphere of conventional explosives designed to detonate inward all at exactly the same microsecond. This crushed a core of plutonium so tightly that the atoms split apart, triggering a nuclear chain reaction and an unimaginable release of energy.',
     },
     'warfare-10': {
         inventors: [
@@ -425,7 +425,7 @@ export const ARTIFACT_ENRICHMENT: Record<string, EnrichmentEntry> = {
             { name: 'Westinghouse', portrait: '/images/portraits/warfare/Westinghouse.png', isCompany: true },
         ],
         origin: 'United States',
-        description: 'USS Nautilus was the world\'s first nuclear-powered submarine. Its pressurized water reactor allowed it to remain submerged indefinitely, limited only by crew endurance and food supplies. In 1958, it completed the first submerged transit of the North Pole, demonstrating that nuclear propulsion had transformed the submarine into a true submersible.',
+        description: 'The world\'s very first nuclear-powered submarine. Older subs ran on electric batteries underwater and had to constantly come up to the surface to run noisy diesel engines to recharge them. The Nautilus used a small nuclear reactor to generate power, meaning it could stay hidden deep underwater for months at a time.',
     },
     'warfare-11': {
         inventors: [
@@ -433,14 +433,14 @@ export const ARTIFACT_ENRICHMENT: Record<string, EnrichmentEntry> = {
             { name: 'Convair', portrait: '/images/portraits/warfare/Convair.png', isCompany: true },
         ],
         origin: 'USSR / United States',
-        description: 'The intercontinental ballistic missile emerged simultaneously from Soviet designer Sergei Korolev\'s R-7 and the American Atlas program. These rockets could deliver nuclear warheads to any point on Earth within 30 minutes, creating the paradigm of Mutually Assured Destruction (MAD) that defined the Cold War.',
+        description: 'An Intercontinental Ballistic Missile is essentially a massive space rocket built for war. Instead of flying an airplane to drop a bomb, an ICBM shoots a nuclear warhead straight up into space. It arcs across the globe and then falls back down onto a target thousands of miles away at hypersonic speeds.',
     },
     'warfare-12': {
         inventors: [
             { name: 'Lockheed Skunk Works', portrait: '/images/portraits/warfare/Lockheed Skunk Works.jpg', isCompany: true },
         ],
         origin: 'United States',
-        description: 'The F-117 Nighthawk was the first operational aircraft designed entirely around radar stealth technology. Developed by Lockheed\'s Skunk Works using mathematician Pyotr Ufimtsev\'s equations, its faceted surfaces deflected radar signals away from receivers. It shifted the fundamental equation of air power from speed and armor to low observability.',
+        description: 'The world\'s first operational stealth aircraft. Its bizarre, jagged, diamond-like shape looks completely un-aerodynamic because it wasn\'t built to fly perfectly; it was specifically built to scatter incoming enemy radar waves away from the source. To radar screens, this heavily armed jet basically looked like a small bird.',
     },
     'warfare-13': {
         inventors: [
@@ -448,7 +448,7 @@ export const ARTIFACT_ENRICHMENT: Record<string, EnrichmentEntry> = {
             { name: 'General Atomics', portrait: '/images/portraits/warfare/General Atomics.png', isCompany: true },
         ],
         origin: 'United States',
-        description: 'Abraham Karem\'s Predator drone decoupled lethal force from physical risk by placing the operator thousands of miles from the battlefield. Equipped with cameras and later Hellfire missiles, it enabled persistent surveillance and precision strikes without risking a human pilot, making remote, unmanned combat a permanent capability.',
+        description: 'Originally, this was just a slow, remote-controlled spy drone used to circle high above a battlefield and send live video back to base. Eventually, engineers decided to strap two anti-tank missiles to it. It kicked off the modern era of drone warfare, allowing a pilot sitting in a trailer in Nevada to safely strike a target across the globe.',
     },
 
     // ========================
@@ -460,56 +460,56 @@ export const ARTIFACT_ENRICHMENT: Record<string, EnrichmentEntry> = {
             { name: 'Hans Lippershey', dates: 'c. 1570 – 1619', portrait: '/images/portraits/instruments/Hans Lippershey.jpg' },
         ],
         origin: 'Italy',
-        description: 'While lenses existed previously, Galileo\'s refracting telescope was the first turned toward the heavens with scientific rigor. Through it, he observed the moons of Jupiter and the phases of Venus—direct evidence against the geocentric model. This instrument catalyzed the Copernican Revolution.',
+        description: 'Instead of just looking at the stars with the naked eye, Galileo used two curved glass lenses stuck inside a long tube to bend and magnify incoming light. He didn\'t invent the telescope, but he perfected it enough to clearly see the craters on the moon and discover the moons of Jupiter, proving Earth wasn\'t the center of everything.',
     },
     'instruments-02': {
         inventors: [
             { name: 'Robert Hooke', dates: '1635 – 1703', portrait: '/images/portraits/instruments/Robert Hooke.jpg' },
         ],
         origin: 'United Kingdom',
-        description: 'Robert Hooke\'s compound microscope enabled him to examine thin slices of cork, where he observed tiny compartments he named "cells." His masterwork Micrographia contained stunning illustrations of insects and plants at magnifications never before seen, revealing an invisible world beneath human perception.',
+        description: 'Robert Hooke essentially took the same idea as the telescope but flipped it to look at incredibly tiny things up close. By using multiple lenses stacked on top of each other, he was able to magnify a thin slice of cork and discover that it was made up of tiny little empty boxes, which he famously named "cells."',
     },
     'instruments-03': {
         inventors: [
             { name: 'John Harrison', dates: '1693 – 1776', portrait: '/images/portraits/instruments/John Harrison.jpg' },
         ],
         origin: 'United Kingdom',
-        description: 'John Harrison\'s H4 marine chronometer solved the "Longitude Problem" that had plagued navigation for centuries. This pocket-watch-sized device kept time accurate to within seconds over months at sea, enabling navigators to determine their east-west position by comparing local solar time to a fixed reference.',
+        description: 'For centuries, sailors got hopelessly lost at sea because they couldn\'t accurately tell their east-west position (longitude). Harrison solved this by spending his entire life inventing a spring-loaded clock that was incredibly precise, small enough to carry, and completely immune to the violent rocking of a ship or extreme temperature changes.',
     },
     'instruments-04': {
         inventors: [
             { name: 'Léon Foucault', dates: '1819 – 1868', portrait: '/images/portraits/instruments/Léon Foucault.webp' },
         ],
         origin: 'France',
-        description: 'Léon Foucault\'s pendulum provided the first direct physical proof that the Earth rotates on its axis. Suspended from the dome of the Panthéon in Paris, the pendulum\'s plane of swing remained fixed due to inertia while the floor beneath it visibly rotated, turning an abstract astronomical concept into a visible reality.',
+        description: 'This is a brilliantly simple device built to prove that the Earth is actually spinning. Foucault hung a massive metal weight from a super long wire so it could swing freely back and forth. Because the pendulum stays swinging in the exact same direction while the building around it slowly rotates with the Earth, it looks like the pendulum is magically changing direction throughout the day.',
     },
     'instruments-05': {
         inventors: [
             { name: 'C.T.R. Wilson', dates: '1869 – 1959', portrait: '/images/portraits/instruments/C.T.R. Wilson.webp' },
         ],
         origin: 'United Kingdom',
-        description: 'C.T.R. Wilson\'s cloud chamber used supersaturated water vapor to make the paths of subatomic particles visible as condensation trails. For the first time, physicists could photograph the trajectories of alpha particles and electrons, providing the experimental evidence that bridged theoretical quantum mechanics with observable physical reality.',
+        description: 'This was the very first way scientists could actually "see" subatomic particles. It’s basically a sealed glass box filled with cold, supersaturated alcohol vapor. When a tiny, invisible particle shoots through it, it knocks electrons off the gas atoms, leaving behind a faint, misty little trail just like a jet flying high in the sky.',
     },
     'instruments-06': {
         inventors: [
             { name: 'Ernest O. Lawrence', dates: '1901 – 1958', portrait: '/images/portraits/instruments/Ernest O. Lawrence.jpg' },
         ],
         origin: 'United States',
-        description: 'Ernest Lawrence\'s cyclotron was the first circular particle accelerator, using oscillating electric fields and a magnetic field to spiral charged particles outward at increasing speeds. This transformed physics from passive observation to active experimentation, enabling scientists to probe nuclear structure and create synthetic elements.',
+        description: 'Before this, smashing atoms meant shooting radioactive particles at a target in a straight line, which required impossibly long, expensive machines. Lawrence figured out how to use two D-shaped magnets to spin the particles in a tight circle, hitting them with a pulse of electricity on every lap to slowly speed them up until they were going fast enough to split an atom.',
     },
     'instruments-07': {
         inventors: [
             { name: 'Ernst Ruska', dates: '1906 – 1988', portrait: '/images/portraits/instruments/Ernst Ruska.jpg' },
         ],
         origin: 'Germany',
-        description: 'Ernst Ruska built the first transmission electron microscope, which used focused beams of electrons instead of light to image specimens. Because electron wavelengths are far shorter than visible light, the TEM achieved resolutions thousands of times greater than optical microscopes—revealing the structures of viruses and crystal lattices for the first time.',
+        description: 'Light microscopes eventually hit a physical limit because light waves are just too big to see really tiny things like viruses. Instead of light, this machine shoots a concentrated beam of electrons right through a ridiculously thin sample. Since electrons are unimaginably small, scientists could suddenly zoom in millions of times closer than ever before.',
     },
     'instruments-08': {
         inventors: [
             { name: 'Grote Reber', dates: '1911 – 2002', portrait: '/images/portraits/instruments/Grote Reber.jpg' },
         ],
         origin: 'United States',
-        description: 'Grote Reber built the first dedicated radio telescope in his backyard in Wheaton, Illinois. Using a 31-foot parabolic dish, he mapped radio emissions from the Milky Way, confirming Karl Jansky\'s earlier detection and establishing radio astronomy as a scientific discipline.',
+        description: 'Grote Reber built a giant, 31-foot dish out of sheet metal in his actual backyard. Instead of looking at visible starlight, he used it to capture invisible radio waves bouncing around the universe. He single-handedly mapped the entire radio sky, proving that space is filled with crazy, invisible energy that our eyes can\'t even see.',
     },
     'instruments-09': {
         inventors: [
@@ -517,13 +517,13 @@ export const ARTIFACT_ENRICHMENT: Record<string, EnrichmentEntry> = {
             { name: 'Applied Biosystems', portrait: '/images/portraits/instruments/Applied Biosystems.svg', isCompany: true },
         ],
         origin: 'United States',
-        description: 'The ABI Prism 3700 was a capillary electrophoresis DNA sequencer that used laser-excited fluorescent dye terminators to read genetic code at industrial speeds. This instrument was the workhorse of the Human Genome Project, enabling the complete sequencing of 3 billion base pairs of human DNA and transforming biology into a data-driven discipline.',
+        description: 'This is the machine that successfully mapped the human genome. Instead of scientists slowly deciphering DNA by hand, this automated beast used lasers and fluorescent dyes to read millions of genetic letters a day. It basically turned the slow, painful process of reading biology into a high-speed, automated assembly line.',
     },
     'instruments-10': {
         inventors: [
             { name: 'NASA / ESA / CSA', portrait: '/images/portraits/instruments/ESA.png', isCompany: true },
         ],
         origin: 'International',
-        description: 'The James Webb Space Telescope is the most powerful space observatory ever built, featuring a 6.5-meter gold-plated beryllium mirror that unfolds after launch. Operating at the L2 Lagrange point and observing in infrared, JWST can detect light from the first galaxies that formed after the Big Bang, peering back over 13.5 billion years into cosmic history.',
+        description: 'This is the most complex eye ever built. Instead of looking at normal light, its giant, gold-plated honeycomb mirror is specifically designed to catch infrared heat signatures from the very first galaxies ever formed. Because it sits a million miles away in freezing, deep space, it can see right through massive clouds of cosmic dust that block other telescopes.',
     },
 };
